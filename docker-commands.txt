@@ -1,0 +1,14 @@
+To stop all running containers and delete all images, run this 2 commands:
+
+docker rm -f $(docker ps -aq)     # Stop and remove all containers
+docker rmi -f $(docker images -q) # Force remove all images
+
+
+To run a container on the browser and map it to a port, use:
+docker run -d -p 80:3000 johntoby/nodeapp 
+
+
+
+To run a container interaxtively on the terminal (e.g. a goland calculator app), use: 
+docker run -it johntoby/calculatorapp 
+
