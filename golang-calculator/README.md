@@ -36,7 +36,7 @@ To build the Docker image, run the following command from the project directory:
 ```bash
 docker build -t golang-calculator .
 ```
-
+![docker-build-image](Picture1.jpg)
 
 
 ### Running the Docker Container
@@ -46,6 +46,8 @@ To run the application in a Docker container:
 ```bash
 docker run -it golang-calculator
 ```
+![docker-run-image](ragnar.jpg)
+
 
 The `-it` flags are necessary to provide an interactive terminal for the calculator application.
 
